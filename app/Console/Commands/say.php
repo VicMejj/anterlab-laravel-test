@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class VickyGo extends Command
+class say extends Command
 {
     /**
      * The name and signature of the console command.
@@ -19,7 +19,7 @@ class VickyGo extends Command
      *
      * @var string
      */
-    protected $description = 'Vicky say hello to the user';
+    protected $description = 'System say hello to the user';
 
 
     /**
@@ -28,7 +28,7 @@ class VickyGo extends Command
     public function handle()
 {
     $name = $this->argument('name');
-    $this->info("Vicky callin ..., $name 👋 ");
-    $this->comment('Vicky is happy to see you! 😊');
+    $this->info("System callin ..., $name 👋 ");
+    $this->comment('System is happy to see you! 😊');
 }
 }
